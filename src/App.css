@@ -1,0 +1,105 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100%;
+  background: linear-gradient(to right,#bd7777da, #8f4141c5);
+}
+.navbar{
+  background: linear-gradient(90deg,#7a7272, #db5353);
+}
+.navbar h5{
+  margin: 5px 10px;
+  color: rgb(54, 5, 5);
+  font-family: 'Courier New', Courier, monospace;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 0 30px;
+  list-style-type: none;
+}
+.navlink{
+  text-decoration: none;
+  color: #ece6e6e8;
+  font-size: 17px;
+  font-family: 'Courier New';
+  position: relative;
+}
+.navlink:after{
+  content: '';
+  position: absolute;
+  background-color: #200101;
+  height: 6px;
+  width: 0;
+  top: 18px;
+  left: 0;
+  transition: 0.2s;
+}
+.navlink:hover{
+  color: #200101;
+}
+.navlink:hover:after{
+  width: 100%;
+}
+
+#delete{
+  padding: 4px 10px;
+  border-radius: 10px;
+  background-color: rgba(216, 146, 146, 0) ;
+  border: 2px solid #6e0909ef;
+  color:#6e0909ef;
+  box-shadow: 5px 5px 10px;
+  font-weight: 600;
+}
+#add{
+  box-shadow: 5px 5px 10px #012001;
+  margin-top: 20px;
+}
+#heading, #desc{
+  box-shadow: 5px 5px 15px #200101;
+}
+form label{
+  font-family: 'Courier New';
+  font-size: 17px;
+}
+#taskadd{
+  font-family: Georgia;
+  font-size: 30px;
+  color: #200101;
+  margin-top: 50px;
+}
+
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(90deg, #db5353, #7a7272);
+  color: #ece6e6e8;
+  padding-top: 5px;
+}
+
+#abt h4{
+  font-family:monospace;
+  font-size: 30px;
+}
+#abt p{
+  font-family:monospace;
+  font-size: 15px;
+}
+
+@media(max-width:600px){
+  .navbar h5{
+    margin: 6px auto;
+  }
+  nav{
+    margin: 0 auto;
+  }
+  #add{
+    margin: 20px auto;
+  }
+}
+
